@@ -1,5 +1,5 @@
-import { DOCTORS, timeLabel, todayISO } from "../../utils.js";
-import { Field } from "../ui.jsx";
+import { DOCTORS, timeLabel, todayISO } from '../../utils.js';
+import { Field } from '../ui.jsx';
 
 function AppointmentScheduleFields({
   form,
@@ -19,12 +19,12 @@ function AppointmentScheduleFields({
         <Field label="Doctor" error={errors.doctorId || liveErrors.doctorId}>
           <select
             value={form.doctorId}
-            disabled={role === "doctor"}
-            onChange={(event) => onFieldChange("doctorId", event.target.value)}
+            disabled={role === 'doctor'}
+            onChange={(event) => onFieldChange('doctorId', event.target.value)}
           >
             <option value="">Select doctor</option>
             {DOCTORS.filter(
-              (doctor) => role !== "doctor" || doctor.id === doctorId,
+              (doctor) => role !== 'doctor' || doctor.id === doctorId,
             ).map((doctor) => (
               <option key={doctor.id} value={doctor.id}>
                 {doctor.name}
@@ -38,7 +38,7 @@ function AppointmentScheduleFields({
             type="date"
             min={todayISO()}
             value={form.date}
-            onChange={(event) => onFieldChange("date", event.target.value)}
+            onChange={(event) => onFieldChange('date', event.target.value)}
           />
         </Field>
 
@@ -58,7 +58,7 @@ function AppointmentScheduleFields({
         >
           <select
             value={form.time}
-            onChange={(event) => onFieldChange("time", event.target.value)}
+            onChange={(event) => onFieldChange('time', event.target.value)}
             disabled={!form.doctorId || !form.date}
           >
             <option value="">Select time</option>
@@ -73,7 +73,7 @@ function AppointmentScheduleFields({
                   disabled={!isAvailable && !isCurrentSelection}
                 >
                   {timeLabel(slot)}
-                  {!isAvailable && !isCurrentSelection ? " — Booked" : ""}
+                  {!isAvailable && !isCurrentSelection ? ' — Booked' : ''}
                 </option>
               );
             })}
@@ -84,7 +84,7 @@ function AppointmentScheduleFields({
           <Field label="Initial status">
             <select
               value={form.status}
-              onChange={(event) => onFieldChange("status", event.target.value)}
+              onChange={(event) => onFieldChange('status', event.target.value)}
             >
               <option value="booked">Booked</option>
               <option value="arrived">Arrived</option>
@@ -94,7 +94,7 @@ function AppointmentScheduleFields({
       </div>
 
       <p className="field-hint">
-        Slots are 15 minutes and follow the selected doctor's working hours.
+        Slots are 15 minutes and follow the selected doctor&apos;s working hours.
         Cancelled appointments do not block a time slot.
       </p>
     </div>

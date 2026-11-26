@@ -63,7 +63,7 @@ describe('ClinicDesk data and validation helpers', () => {
       phone: '9876543210',
       age: '28',
       doctorId: 1,
-      date: addDaysISO(0),
+      date: addDaysISO(1),
       time: '09:30',
       reason: 'Check-up',
     };
@@ -78,7 +78,7 @@ describe('ClinicDesk data and validation helpers', () => {
     expect(validateAppointment(form, existingAppointments).time)
       .toMatch(/already has/);
     expect(validateAppointment({ ...form, phone: '1234567890' }, []).phone)
-      .toMatch(/starting with 6–9/);
+      .toMatch(/starting with 6, 7, 8, or 9/);
     expect(validateAppointment({ ...form, age: '121' }, []).age)
       .toMatch(/0 and 120/);
   });
@@ -89,7 +89,7 @@ describe('ClinicDesk data and validation helpers', () => {
       phone: '9876543210',
       age: '28',
       doctorId: 1,
-      date: addDaysISO(0),
+      date: addDaysISO(1),
       time: '09:30',
       reason: 'Check-up',
     };

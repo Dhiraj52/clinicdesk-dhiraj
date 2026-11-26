@@ -94,10 +94,18 @@ function AppointmentFilters({ filters, onChange, role, doctorId, onExport, onPri
 function AppointmentActions({ appointment, role, onHistory, onEdit, onCancel }) {
   return (
     <div className="table-actions">
-      <button onClick={() => onHistory(appointment)}>History</button>
+      <button
+        type="button"
+        className="action-btn action-neutral"
+        onClick={() => onHistory(appointment)}
+      >
+        History
+      </button>
 
       {role === 'receptionist' && (
         <button
+          type="button"
+          className="action-btn action-primary"
           onClick={() => onEdit(appointment)}
           disabled={appointment.status === 'cancelled'}
         >
@@ -108,7 +116,8 @@ function AppointmentActions({ appointment, role, onHistory, onEdit, onCancel }) 
       {role === 'receptionist'
         && !['cancelled', 'completed'].includes(appointment.status) && (
         <button
-          className="danger-text"
+          type="button"
+          className="action-btn action-danger"
           onClick={() => onCancel(appointment)}
         >
           Cancel
