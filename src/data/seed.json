@@ -1,0 +1,226 @@
+{
+  "clinic": "Sunrise Family Clinic",
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Priya Sharma",
+      "specialization": "General Physician",
+      "hours": [
+        "09:00",
+        "13:00"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Arjun Desai",
+      "specialization": "Family Medicine",
+      "hours": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dr. Meera Kulkarni",
+      "specialization": "Dermatology",
+      "hours": [
+        "12:00",
+        "18:00"
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "id": "seed-1001",
+      "patientName": "Aarav Patil",
+      "phone": "9876543210",
+      "age": 24,
+      "reason": "Routine check-up",
+      "status": "completed",
+      "doctorId": 1,
+      "dayOffset": -1,
+      "time": "09:00",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "seed-1002",
+      "patientName": "Ananya Joshi",
+      "phone": "9898989898",
+      "age": 31,
+      "reason": "Headache",
+      "status": "no_show",
+      "doctorId": 2,
+      "dayOffset": -1,
+      "time": "10:00",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "seed-1003",
+      "patientName": "Rohan Kulkarni",
+      "phone": "9765432109",
+      "age": 42,
+      "reason": "Follow-up",
+      "status": "completed",
+      "doctorId": 1,
+      "dayOffset": -1,
+      "time": "11:00",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "seed-1004",
+      "patientName": "Sana Shaikh",
+      "phone": "9123456780",
+      "age": 27,
+      "reason": "Seasonal allergy",
+      "status": "cancelled",
+      "doctorId": 3,
+      "dayOffset": -1,
+      "time": "12:00",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "seed-1005",
+      "patientName": "Vivek More",
+      "phone": "9012345678",
+      "age": 50,
+      "reason": "Back pain",
+      "status": "arrived",
+      "doctorId": 2,
+      "dayOffset": -1,
+      "time": "14:00",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "seed-1006",
+      "patientName": "Isha Deshmukh",
+      "phone": "9876501234",
+      "age": 22,
+      "reason": "General consultation",
+      "status": "booked",
+      "doctorId": 1,
+      "dayOffset": 0,
+      "time": "09:00",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "seed-1007",
+      "patientName": "Kabir Shah",
+      "phone": "9876512345",
+      "age": 35,
+      "reason": "Fever",
+      "status": "arrived",
+      "doctorId": 1,
+      "dayOffset": 0,
+      "time": "09:30",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "seed-1008",
+      "patientName": "Meera Pawar",
+      "phone": "9876523456",
+      "age": 29,
+      "reason": "Migraine",
+      "status": "booked",
+      "doctorId": 2,
+      "dayOffset": 0,
+      "time": "10:00",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "seed-1009",
+      "patientName": "Omkar Jadhav",
+      "phone": "9876534567",
+      "age": 46,
+      "reason": "Stomach pain",
+      "status": "in_consultation",
+      "doctorId": 2,
+      "dayOffset": 0,
+      "time": "10:15",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "seed-1010",
+      "patientName": "Aditi Kulkarni",
+      "phone": "9876545678",
+      "age": 19,
+      "reason": "Skin irritation",
+      "status": "booked",
+      "doctorId": 3,
+      "dayOffset": 0,
+      "time": "12:00",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "seed-1011",
+      "patientName": "Neha Patil",
+      "phone": "9876556789",
+      "age": 38,
+      "reason": "Follow-up",
+      "status": "completed",
+      "doctorId": 3,
+      "dayOffset": 0,
+      "time": "12:15",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "seed-1012",
+      "patientName": "Rahul Joshi",
+      "phone": "9876567890",
+      "age": 44,
+      "reason": "Cough and cold",
+      "status": "booked",
+      "doctorId": 1,
+      "dayOffset": 1,
+      "time": "12:00",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "seed-1013",
+      "patientName": "Pooja More",
+      "phone": "9876578901",
+      "age": 26,
+      "reason": "Routine check-up",
+      "status": "booked",
+      "doctorId": 1,
+      "dayOffset": 1,
+      "time": "09:00",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "seed-1014",
+      "patientName": "Siddharth Shah",
+      "phone": "9876589012",
+      "age": 53,
+      "reason": "Knee pain",
+      "status": "booked",
+      "doctorId": 2,
+      "dayOffset": 1,
+      "time": "10:00",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "seed-1015",
+      "patientName": "Tanvi Desai",
+      "phone": "9876590123",
+      "age": 33,
+      "reason": "Allergy follow-up",
+      "status": "booked",
+      "doctorId": 3,
+      "dayOffset": 1,
+      "time": "12:00",
+      "date": "2026-11-26"
+    },
+    {
+      "id": "seed-1016",
+      "patientName": "Aditya Patil",
+      "phone": "9876509876",
+      "age": 41,
+      "reason": "General consultation",
+      "status": "booked",
+      "doctorId": 2,
+      "dayOffset": 1,
+      "time": "13:00",
+      "date": "2026-11-26"
+    }
+  ]
+}

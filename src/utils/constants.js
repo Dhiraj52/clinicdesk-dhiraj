@@ -1,0 +1,2 @@
+export const APPOINTMENTS_PER_PAGE = 8;
+export const APPOINTMENT_SLOT_MINUTES = 15;
